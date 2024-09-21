@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <div class="navbar">
+        <label for="nav-toggle" class="burger-menu">&#9776;</label>
+        <label for="nav-toggle" class="close-menu">&#10005;</label> <!-- Close icon -->
+        <div class="sidenav">
+            <a href="home.html">Home</a>
+            <a href="activeListing.html">Active Listings</a>
+            <a href="siteMap.html">SiteMap and Credits</a>
+            <a href="index.html">Web Projects</a>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="images/mainLogo.png" alt="Logo">
+            <span class="title">Prime Estate</span>
+        </div>
+    </header>
+    <br><br>
+    <main id="formContainer">
+        <h2>Please Leave Us Message</h2>
+        <p>For Reservations, Information and Site Viewings</p>
+        <form class="contactContainer">  
+            <table>
+                <tr>
+                    <th><label class="formLabels" for="firstName">First Name*</label></th>
+                    <td>
+                        <input width="200px" type="text" class="inputColor" name="firstName" id= "firstName" required="required"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label class="formLabels" for="lastName">Last Name*</label></th>
+                    <td>
+                        <input type="text" class="inputColor" name="lastName" id= "lastName" required="required"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email*</label></th>
+                    <td>
+                        <input type="text" class="inputColor" name="contact" id= "email" required="required"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="phone">Phone*</label></th>
+                    <td>
+                        <input type="text" class="inputColor" name="contact" id= "phone" required="required"/>
+                    </td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th colspan="4"><label for="houseStyle">Choose House Style (<em>Optional</em>):</label></th>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="radio" class="inputColor" id="victorian" name="houseStyle" value="victorian">
+                        <label for="victorian">Victorian</label>
+                        <input type="radio" class="inputColor" id="contemporary" name="houseStyle" value="contemporary">
+                        <label for="contemporary">Contemporary</label>
+                        <input type="radio" class="inputColor" id="ranchHouse" name="houseStyle" value="ranchHouse">
+                        <label for="ranchHouse">Ranch House</label>
+                        <input type="radio" class="inputColor" id="other" name="houseStyle" value="other">
+                        <label for="other">Other Style</label>
+                        <input type="text" class="inputColor" name="houseStyle" id= "email"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" id="message">
+                        <p>
+                            <label for="other">Message* <br><textarea class="inputColor" cols="130" rows="10" id="other" name="other" required="required"></textarea></label><br>
+                        </p>  
+                    </td>
+                </tr><br>
+                <tr>
+                    <td colspan="4">
+                        <p id="end"><strong>Note:</strong><em>By clicking Send Inquiry, you are allowing Angelo Tiquio to contact you via call, email, and text. To opt-out, you can reply 'stop' at any time or click the unsubscribe link in the emails. Message and data rates may apply.</em></p><br>
+                    </td>
+                </tr>
+            </table>                
+            <p id="passData">
+                <input type="submit" class="passData" value="Send Inquiry" />&nbsp;
+                <input type="reset" class="passData" value="Clear Data" /><br>
+            </p>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <div id="footerContent">
+                <p class="footer">&copy; Copyright Angelo Tiquio - COMP213 - Winter 2024 <span id="left"><b>Real Estate Website</b></span>  <span id="right">Socials: <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="facebook"></a> <a href="https://www.linkedin.com"><img src="images/Linkedin_Logo.png" alt="Linkedin Logo"></a></span></p>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>

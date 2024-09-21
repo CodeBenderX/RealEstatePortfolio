@@ -1,0 +1,261 @@
+ /* this style applies to the general page */
+ #mainHtml {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-image: url(./assets/assignment3/Coffee_Background5.png);
+    background-size: 100%;
+    background: url(./assets/assignment3/Coffee_Background5.png) no-repeat cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* Header style */
+ header {
+    width: 70%;
+    text-align: middle;
+    background-color: #a16903;
+    margin: 0 auto; 
+}
+
+header #logo{
+    max-width: 100px; 
+    vertical-align: middle; 
+}
+
+header h3 {
+    display: inline-block;
+    margin: 0;
+    font-family: cursive;
+    font-size: 20px;
+    color: #fff; /* Set the title color */
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.591);
+    display: inline-block; 
+    width: 70%; 
+    text-align: middle; 
+    margin: 0 auto; 
+}
+
+nav a {
+    display: inline-block; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #a16903;
+    font-weight: bold;
+    font-style: oblique;
+    transition: 0.3s;
+    color: black;
+}
+
+
+#home {
+    margin: 0 auto;
+    width: 70%;
+    background-color: rgba(254, 248, 236, 0.699);
+    font-size: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+tr {
+    border: solid black;
+}
+th {
+    background-color: #a16903;
+}
+.product-pic {
+    height: 150px;
+    max-width: 100%;
+}
+.product-pic:hover {
+    transform: scale(1.1);
+    transform: 0.3s;
+}
+
+.about {
+    text-align: start;
+}
+
+li {
+    list-style: url(./assets/assignment3/bean.gif);
+}
+
+
+
+#mapCanada {
+    overflow-x: content-box;
+}
+#map-container {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 70%;
+    background-color: rgba(254, 248, 236, 0.699);
+}
+#map-image {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+footer {
+    background-color: #a16903;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+#left {
+    float: left;
+    padding-left: 10px;
+}
+#right {
+    float: right;
+    padding-right: 10px;
+}
+#right a{
+    color: white;
+    text-decoration: none;
+}
+
+#return {
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #home, main,
+    #map-container, table, 
+    #map-image, #return{
+        font-size: 10px;
+        width: 100%;
+        background-color: bisque;
+    }
+    header, nav, footer {
+        font-size: 10px;
+        background-color: #a16903;
+        width: 100%;
+    }
+    .product-pic {
+        max-width: 100px;
+        height: 100px;
+    }
+    .about {
+        text-align: center;
+    }
+
+    #map-image {
+        height: auto; 
+    }
+
+    .companyLogo {
+        height: 20px;
+    }
+
+    #left, #right, #return {
+        float: none; 
+        text-align: center; 
+    }
+  }
+
+
+/* Additional style for Design.html */
+#details {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: bisque;
+    text-align: center;
+}
+#detailTable{
+    width: 50%;
+    margin: 0 auto;
+}
+.detailTr {
+    border: solid black;
+}
+.detailTh {
+    background-color: #a16903;
+}
+.detailTd {
+    text-align: justify;
+    padding: 5px;
+}
+#productDescription {
+    width: 20%;
+}
+#detailedProduct {
+    height: 400px;
+    max-width: 100%;
+}
+
+
+
+
+/* Adjust to the minimum screen width */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #home, main,
+    #map-container, table, 
+    #map-image, #return{
+        font-size: 10px;
+        width: 100%;
+        background-color: bisque;
+    }
+    header, nav, footer {
+        font-size: 10px;
+        background-color: #a16903;
+        width: 100%;
+    }
+    .product-pic {
+        max-width: 100px;
+        height: 100px;
+    }
+    .about {
+        text-align: center;
+    }
+
+    #map-image {
+        height: auto; 
+    }
+
+    .companyLogo {
+        height: 20px;
+    }
+
+    #left, #right, #return {
+        float: none; 
+        text-align: center; 
+    }
+
+    #detailedProduct {
+        height: 200px;
+        max-width: 100%;
+    }
+  }

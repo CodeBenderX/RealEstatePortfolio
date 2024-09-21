@@ -1,0 +1,366 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f8eeec;
+    scroll-behavior: smooth;
+}
+
+/* Style for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #001F3F;
+    color: white;
+    position: relative; /* Position relative to contain the close-menu button */
+}
+
+/* Style for the burger menu */
+.burger-menu {
+    background-color: #113065;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    position: fixed;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2; 
+}
+
+/* Style for the close menu */
+.close-menu {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px; 
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 200px; 
+}
+.close-menu:hover {
+    color: black;
+}
+
+/* Hide checkbox */
+.nav-toggle {
+    display: none;
+}
+
+/* Style for the side nav */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Start off-screen */
+    background-color: #113065;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center links vertically */
+    padding-top: 50px; /* Adjust to give space for burger icon */
+    z-index: 1; /* Ensure side nav is behind burger icon */
+}
+
+/* Show side nav when checkbox is checked */
+.nav-toggle:checked + .navbar .sidenav {
+    left: 0; /* Slide in from the left */
+}
+
+/* Show close menu icon when checkbox is checked */
+.nav-toggle:checked + .navbar .close-menu {
+    display: block; /* Show close menu when side nav is open */
+}
+
+/* Hide burger menu icon when checkbox is checked */
+.nav-toggle:checked + .navbar .burger-menu {
+    display: none; /* Hide burger menu when side nav is open */
+}
+
+/* Show burger menu icon when checkbox is unchecked */
+.nav-toggle:not(:checked) + .navbar .burger-menu {
+    display: block;
+}   
+
+/* Style for links in the side nav */
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fafafa;
+    display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style for the background image container */
+.background-image {
+    background-image: url(images/landingPhoto.jpg); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust to cover the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Set text color to contrast with the background image */
+    text-align: center;
+}
+
+/* Style for backround image text content */
+.background-image h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.background-image p {
+    text-shadow: #fafafa;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Style for the container of mission and vision */
+.content {
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh; 
+    padding-bottom: 10px;
+}
+.profile{
+    background-color:#DBE9F4;
+}
+/* Style for the table */
+.content table {
+    width: 100%; /* Set the width of the table to 100% */
+    height: 80%; /* Set the height of the table to 100% */
+}
+
+/* Style for the table cells */
+.content td {
+    width: 50%; 
+    height: 80%;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Style for the images */
+.content .images img {
+    max-width: 70%; 
+    height: auto;
+    border-radius: 80px;
+    border: 5px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style for the mission and vision headings */
+.content h2 {
+    margin-bottom: 20px; 
+}
+
+/* Style for the mission and vision paragraphs */
+.content p {
+    margin-bottom: 20px; 
+}
+.toTop {
+    float: right;
+}
+/*profile design*/
+.content .testimonials{
+    width: 33.33%;
+    text-align: center;
+    height: auto;
+    background-color: #DBE9F4;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+caption{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.content .testimonials img {
+    max-width: 20%; /* Ensure the image does not exceed the cell width */
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+}
+/*profile picture*/
+#profile, .thumbnails{
+    background-color: #f8eeec;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*additional design for active listings*/
+.content #houses{
+    width: 80%;
+    margin: 0 auto;
+}
+.content .description {
+    width: 70%;
+    margin: 0 auto;
+}
+.thumbnails{
+    max-width: 100%;
+}
+
+/*style for header*/
+header {
+    background-color: #001F3F;
+    color: white;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+.title {
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Footer style */
+footer {
+    background-color: #113065; 
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center; 
+    margin: auto; 
+    color: white;
+    bottom: 0; /* Align the footer to the bottom of the viewport */
+    left: 0;
+    right: 0;
+}
+footer div {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+footer img{
+    width: 20px;
+}
+#left {
+    float: left;
+    padding-left: 10px;
+}
+#right {
+    float: right;
+    padding-right: 10px;
+}
+#right a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Property Listings Design*/
+.propertyListing {
+    padding-top: 70px;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.propertyListing img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Style for Contact */
+#formContainer {
+    width: 60%; 
+    margin: 0 auto; 
+    text-align: left; 
+    height: 100vh;
+}
+.contactContainer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+/* .contactContainer table th, tr{
+    border: 2px solid #001F3F;
+} */
+.contactContainer table th{
+    width: 20%;
+}
+.contactContainer .inputColor {
+    background-color: aliceblue;
+}
+.inputColor:hover{
+    background-color: #98c1d1;
+}
+.inputColor[type=radio]:hover + label{
+    color: #6090a2;
+}
+#message
+#passData {
+    width: 100%;
+    text-align: center;
+}
+.passData {
+    width: 150px;
+    height: 40px;
+    color: whitesmoke;
+    background-color: #464648;
+}
+.passData:hover {
+    background-color: #113065;
+}
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+/* Site Map Design */
+#map{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+main .siteMap{
+    width: 100%;
+    margin: 0 auto;
+}
+.siteMap th{
+    width: 33.33%;
+    text-align: center;
+}
+#col1{
+    background-color: #c6a477;
+}
+#col2{
+    background-color: #ECD59F;
+}
+#col3{
+    background-color: #D3E7EE;
+}
+ul li {
+    list-style: none;
+    padding: 2px;
+    font-size: 1.2em;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    #home{
+        height: 100vh;
+        width: 100%;
+        padding-top: 0;
+    }
+    .mission, .vision {
+        width: 80%;
+        font-size: small;
+    }
+}
